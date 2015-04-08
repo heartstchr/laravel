@@ -1,0 +1,181 @@
+/****************************************************************************************************
+* Author: Jiwan Ghosal;
+* Date Modified: 29th March, 2015;
+*
+*	cntant: 
+*		color:#009555 ( #0E9B5D)
+*		font-size: 
+*
+*
+*******TOC***********
+* # htmlTags Selector
+* 		## Navigations
+*		## Content
+*		## Footer 
+* # Class Selector
+* 		## Navigations
+*		## Content
+*		## Footer 
+* # Id Selector
+* 		## Navigations
+*		## Content
+*		## Footer 
+*
+*******************************************************************************************************/
+	/***********************************Common Layout**************************************/
+	/***********************************Home Page**************************************/
+	/***********************************About Page**************************************/
+	/***********************************Product Page**************************************/
+	/***********************************Contact Page**************************************/
+
+
+/* ****************html tags**************** */
+	/***********************************Common Layout**************************************/
+	body {
+		min-height: 50px;
+		margin-bottom: 0; 
+		height:100%;
+		background: url(/images/treeleav.jpg) 0 0 no-repeat fixed rgba(143, 173, 41, 0.8);
+		background-size: cover;
+	}
+	li{list-style-type: none;color:#FAFAFA;}
+	a:hover{text-decoration: none;}
+	body .navbar-default{
+		background-color: #009555;
+		border-color:#0E9B5D;
+	}
+	body .navbar-default .navbar-nav > li > a{
+		color: #FAFAFA;
+		font-family: 'Lato','sans-serif';
+		font-size: 1.2em;
+	}
+	body .navbar-default .navbar-brand{
+		color: #FAFAFA;
+		font-size: 1.4em;
+	}
+	body .navbar-default .navbar-toggle .icon-bar {
+	background-color: #FAFAFA;
+	}
+	/***********************************Home Page**************************************/
+	#slideshow > div {
+		position: absolute;
+		top: 10px; left: 10px;
+		right: 10px; bottom: 10px;
+	}
+
+	#slideshow img{
+		width: 100%;
+		height: 400px;
+	}
+	/***********************************About Page**************************************/
+	.director div img,.manager div img,.co-manager div img{
+		float:left;
+		width: 50%;
+		height: 300px;
+	}
+	/***********************************Product Page**************************************/
+	/***********************************Contact Page**************************************/
+
+	#contact .map img{
+		width: 100%;
+		height: 100%;
+	}
+	.address span{
+		font:1.5em bold 'Lato','sans-serif';
+	}
+
+/*
+*
+*
+*
+*
+/* ****************Class selector**************** */
+
+	/***********************************Common Layout**************************************/
+	.caption{
+		background-color: rgba(29, 27, 27, 0.49);
+		color: #FAFAFA;
+		text-shadow: 1px 1px 1px rgba(56, 52, 52, 0.8);
+		margin: 10% 0;
+		text-align: center;
+		font-size: 70px;
+		font-family: 'Roboto','sans sarif';
+	}
+	/***********************************Home Page**************************************/
+	.position .memory{
+		background-color: green;
+		background-image: url(/images/green_background.jgp);
+	}
+	/***********************************About Page**************************************/
+	.team{
+		background-color: #FAFAFA;
+		text-align: center;
+	}
+	.txt{
+		float:left;
+		width:50%;
+		text-align: center;
+	}
+	/***********************************Product Page**************************************/
+	.product{
+		text-align: center;
+	}
+	.product div .col{
+		height: :300px;
+	}
+	/***********************************Contact Page**************************************/
+	.map,.address{
+		float: left;
+		border-left: 1px solid rgba(128, 128, 128, 0.2);
+		width: 50%;
+		height: 440px;
+		padding: 4px;
+		background-color: #FAFAFA;
+		box-shadow : 0 3px 12px 2px rgba(128, 128, 128, 0.5);
+	}
+	#contact .address{
+		padding: 5%;
+	}
+	.clearfix{
+		clear: both;
+	}
+	.foot{
+		clear: both;
+		background-color: #FAFAFA;
+	}
+	.footinfo{
+		padding: 10px;
+	}
+	.footinfo,.copyright, .footlogo {
+		text-align: center;
+		width: 100%;
+	}
+	.features,.certified,.social{
+		float: left;
+		width: 33.333%;
+	}
+/*
+*
+*
+*
+*
+/* ****************id selector**************** */
+
+
+	/***********************************Common Layout**************************************/
+	/***********************************Home Page**************************************/
+
+	#slideshow {
+		background-color: #FAFAFA;
+		position: relative;
+		width: 100%;
+		height: 420px;
+		padding: 10px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	} 
+	/***********************************About Page**************************************/
+	/***********************************Product Page**************************************/
+	/***********************************Contact Page**************************************/
+	#contact{
+		padding: 5%;
+	}

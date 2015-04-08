@@ -7,6 +7,7 @@
 	<title>Laravel</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -28,12 +29,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Laravel</a>
+				<a class="navbar-brand" href="{{ url('/') }}">WoodHood</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/') }}">Home</a></li>
+					<li><a href="{{ url('about') }}">About</a></li>
+					<li><a href="{{ url('product') }}">Product</a></li>
+					<li><a href="{{ url('contact') }}">Contact</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -55,8 +59,31 @@
 
 	@yield('content')
 
+	<div class="foot">
+		<div class="footinfo">
+			<div class="features"> <p>feature</p></div>
+			<div class="social"><p> social icon </p></div>
+			<div class="certified"><p>certified </p></div>
+		</div>
+		<br class="clearifix">
+		<div class="copyright">
+			<span style="font-size: xx-small">
+	          <a href="{{ url('terms') }}">
+	            Terms of Use</a>
+	          <a href="{{ url('policy') }}">
+	            Privacy Policy
+	          </a> 
+	          &copy; 2015, getWoodHood.com
+	        </span>
+		</div>
+		<div class="footlogo" >
+	          <img src="woodhood.png" width="160" height="21" border="0" />
+	    </div>
+	</div>
+	
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ asset('/js/main.js') }}" ></script>
 </body>
 </html>
