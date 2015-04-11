@@ -7,6 +7,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::get('/deploy', 'Server@deploy');
 
 Route::get('/', 'PagesController@index');
 Route::get('about', 'PagesController@about');

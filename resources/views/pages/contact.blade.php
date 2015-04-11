@@ -7,6 +7,7 @@
     		Dhaiya Near:-Rani Bandh,<br> 
     		Dhanbad Jharkhand<br>
     		Pin:826004 <br>
+            Email: contact@getwoodhood.com<br>
     		Phone Number:: 07026217029
     	</div>
     </div>
